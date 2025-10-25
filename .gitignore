@@ -1,0 +1,8 @@
+.secrets/
+portfolio-earthquake-analysis-6ff1f9179260.json
+
+.venv/
+venv/
+
+__pycache__/
+*.pyc

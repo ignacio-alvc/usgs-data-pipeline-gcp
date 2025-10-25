@@ -1,0 +1,130 @@
+[0m14:48:17.949798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025527D049B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552A92C440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552A92DF10>]}
+
+
+============================== 14:48:17.959888 | c8b4ca1f-9a4a-45e6-876b-44cce8545fba ==============================
+[0m14:48:17.959888 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m14:48:17.960893 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'profiles_dir': 'C:\\Users\\PC_EMETEL\\.dbt', 'no_print': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt init earthquake_dbt_project', 'printer_width': '80', 'write_json': 'True'}
+[0m14:48:17.987136 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\PC_EMETEL\.dbt
+[0m14:48:17.989216 [debug] [MainThread]: Starter project path: C:\Users\PC_EMETEL\Proyectos\portfolio-data-engineering\earthquake-project\.venv\Lib\site-packages\dbt\include\starter_project
+[0m14:48:18.023028 [info ] [MainThread]: 
+Your new dbt project "earthquake_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:48:18.024481 [info ] [MainThread]: Setting up your profile.
+[0m14:55:36.603677 [info ] [MainThread]: Profile earthquake_dbt_project written to C:\Users\PC_EMETEL\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:55:36.605766 [debug] [MainThread]: Command `dbt init` succeeded at 14:55:36.604756 after 438.83 seconds
+[0m14:55:36.605766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552A12B350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255579B9AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255537E2DB0>]}
+[0m14:55:36.605766 [debug] [MainThread]: Flushing usage events
+[0m14:55:37.700384 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:13:52.256022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023290EABE00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023291133F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023291133FB0>]}
+
+
+============================== 15:13:52.262739 | dabe1e06-9676-4359-b754-42f0ce35e7cd ==============================
+[0m15:13:52.262739 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m15:13:52.262739 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'printer_width': '80', 'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\PC_EMETEL\\.dbt', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m15:13:52.287014 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m15:13:52.287014 [info ] [MainThread]: python version: 3.12.8
+[0m15:13:52.287014 [info ] [MainThread]: python path: C:\Users\PC_EMETEL\Proyectos\portfolio-data-engineering\earthquake-project\.venv\Scripts\python.exe
+[0m15:13:52.287014 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m15:13:55.634267 [info ] [MainThread]: Using profiles dir at C:\Users\PC_EMETEL\.dbt
+[0m15:13:55.635675 [info ] [MainThread]: Using profiles.yml file at C:\Users\PC_EMETEL\.dbt\profiles.yml
+[0m15:13:55.635675 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\PC_EMETEL\Proyectos\portfolio-data-engineering\earthquake-project\dbt_project.yml
+[0m15:13:55.635675 [info ] [MainThread]: adapter type: bigquery
+[0m15:13:55.636673 [info ] [MainThread]: adapter version: 1.10.2
+[0m15:13:55.636673 [info ] [MainThread]: Configuration:
+[0m15:13:55.636673 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:13:55.636673 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:13:55.637829 [info ] [MainThread]: Required dependencies:
+[0m15:13:55.637829 [debug] [MainThread]: Executing "git --help"
+[0m15:13:55.676410 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:13:55.676410 [debug] [MainThread]: STDERR: "b''"
+[0m15:13:55.677421 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:13:55.677421 [info ] [MainThread]: Connection:
+[0m15:13:55.678420 [info ] [MainThread]:   method: service-account
+[0m15:13:55.678420 [info ] [MainThread]:   database: portfolio-earthquake-analysis
+[0m15:13:55.678420 [info ] [MainThread]:   execution_project: portfolio-earthquake-analysis
+[0m15:13:55.679426 [info ] [MainThread]:   schema: earthquakes_dw
+[0m15:13:55.679426 [info ] [MainThread]:   location: us-central1
+[0m15:13:55.679426 [info ] [MainThread]:   priority: interactive
+[0m15:13:55.680486 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m15:13:55.680486 [info ] [MainThread]:   impersonate_service_account: None
+[0m15:13:55.680486 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m15:13:55.681521 [info ] [MainThread]:   job_retries: 1
+[0m15:13:55.681521 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m15:13:55.681521 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m15:13:55.681521 [info ] [MainThread]:   timeout_seconds: 300
+[0m15:13:55.682906 [info ] [MainThread]:   client_id: None
+[0m15:13:55.682906 [info ] [MainThread]:   token_uri: None
+[0m15:13:55.682906 [info ] [MainThread]:   compute_region: None
+[0m15:13:55.683920 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m15:13:55.683920 [info ] [MainThread]:   gcs_bucket: None
+[0m15:13:55.683920 [info ] [MainThread]:   dataproc_batch: None
+[0m15:13:55.684927 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m15:13:56.187841 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m15:13:56.187841 [debug] [MainThread]: On debug: select 1 as id
+[0m15:13:56.187841 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:13:57.537799 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=portfolio-earthquake-analysis&j=bq:us-central1:008c109a-4b31-48ef-9fb9-0552a4ee0a46&page=queryresults
+[0m15:13:57.540229 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:13:57.540229 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:13:57.541230 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\PC_EMETEL\Proyectos\portfolio-data-engineering\earthquake-project\dbt_project.yml> not found
+
+[0m15:13:57.542229 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project portfolio-earthquake-analysis: User does not have bigquery.jobs.create permission in project portfolio-earthquake-analysis.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:13:57.543230 [debug] [MainThread]: Command `dbt debug` failed at 15:13:57.542229 after 5.43 seconds
+[0m15:13:57.543230 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:13:57.543230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023291224FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BE025100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023292B4CC20>]}
+[0m15:13:57.544230 [debug] [MainThread]: Flushing usage events
+[0m15:13:58.560393 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:10:51.831981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E299FF49B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E299EED5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E29CC17CB0>]}
+
+
+============================== 17:10:51.842131 | 6b2723e1-6047-41f3-81a7-d8e252bea4c0 ==============================
+[0m17:10:51.842131 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m17:10:51.843132 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'profiles_dir': 'C:\\Users\\PC_EMETEL\\.dbt', 'write_json': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m17:10:51.843132 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\PC_EMETEL\Proyectos\portfolio-data-engineering\earthquake-project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:10:51.845594 [debug] [MainThread]: Command `dbt run` failed at 17:10:51.845594 after 0.25 seconds
+[0m17:10:51.846153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E29CDE3620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E29C0B55E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E29A97B7A0>]}
+[0m17:10:51.846153 [debug] [MainThread]: Flushing usage events
+[0m17:10:53.257186 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:49:29.090546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015C86007500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015C85E31220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015C85E33860>]}
+
+
+============================== 14:49:29.097609 | 33a69433-97f5-44bc-92c4-e56132f506fe ==============================
+[0m14:49:29.097609 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m14:49:29.098614 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'printer_width': '80', 'profiles_dir': '.', 'invocation_command': 'dbt run --profiles-dir .', 'target_path': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m14:49:29.098614 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\PC_EMETEL\Proyectos\portfolio-data-engineering\earthquake-project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:49:29.099614 [debug] [MainThread]: Command `dbt run` failed at 14:49:29.099614 after 0.17 seconds
+[0m14:49:29.099614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015C85C9B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015C83E75700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015C832DD7C0>]}
+[0m14:49:29.100614 [debug] [MainThread]: Flushing usage events
+[0m14:49:29.921601 [debug] [MainThread]: An error was encountered while trying to flush usage events
