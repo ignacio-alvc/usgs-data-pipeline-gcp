@@ -1,6 +1,57 @@
 version: 2
-sources:
-  - name: raw_data
-    schema: earthquakes_dw 
-    tables:
-      - name: raw_usgs_earthquakes
+
+models:
+  - name: stg_earthquakes
+    description: "Tabla staging limpia y deduplicada de eventos sísmicos de USGS."
+    columns:
+      - name: earthquake_id
+        description: "Identificador único del evento sísmico."
+        tests:
+          - unique
+          - not_null
+
+      - name: magnitude
+        description: "Magnitud reportada del sismo."
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between: 
+              min_value: -2
+              max_value: 10 
+              
+      - name: event_timestamp
+        description: "Fecha y hora UTC del evento."
+        tests:
+          - not_null
+
+      - name: latitude
+        description: "Latitud del epicentro."
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: -90
+              max_value: 90
+
+      - name: longitude
+        description: "Longitud del epicentro."
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: -180
+              max_value: 180
+              
+      - name: depth_km
+        description: "Profundidad del hipocentro en kilómetros."
+        tests:
+          - not_null
+
+      - name: tsunami_alert
+        description: "Indicador numérico de alerta de tsunami (0 o 1)."
+        tests:
+          - accepted_values:
+              values: [0, 1]
+
+      - name: depth_category
+        description: "Categoría de profundidad derivada."
+        tests:
+          - accepted_values:
+              values: ['Superficial', 'Intermedio', 'Profundo']

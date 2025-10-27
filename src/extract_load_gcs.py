@@ -3,7 +3,7 @@ import requests
 import json
 from google.cloud import storage
 from google.cloud import bigquery
-from datetime import datetime
+from datetime import datetime, timezone
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -60,18 +60,26 @@ def load_to_bigquery(data: dict, credentials_path: str):
     if not features_data:
         print("Error: No se encontró el array 'features' en los datos extraídos.")
         return
+    
+    load_timestamp = datetime.now(timezone.utc)
+    processed_features = []
+    for feature in features_data:
+        record = feature.copy()
+        record['_load_timestamp'] = load_timestamp
+        processed_features.append(record)
     print(f"Iniciando carga a BigQuery en la tabla: {BQ_PROJECT_ID}.{BQ_DATASET_ID}.{BQ_TABLE_ID}")
+
     try:
         bq_client = bigquery.Client.from_service_account_json(credentials_path)
         table_id = f"{BQ_PROJECT_ID}.{BQ_DATASET_ID}.{BQ_TABLE_ID}"
         job_config = bigquery.LoadJobConfig(
             autodetect=True,
             source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
-            write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE
+            write_disposition=bigquery.WriteDisposition.WRITE_APPEND
         )
 
         job = bq_client.load_table_from_json(
-            features_data,
+            processed_features,
             table_id,
             job_config=job_config
         )
